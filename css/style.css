@@ -1,3 +1,11 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +17,54 @@
   box-sizing: inherit;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.content {
+  box-shadow: 0 1.5rem 4rem rgba(200, 199, 255, 0.4);
+  display: flex;
+}
+
+.result {
+  width: 30rem;
+  padding: 3rem;
+  color: rgb(200, 199, 255);
+  font-size: 1.8rem;
+  text-align: center;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 2.5rem;
+}
+.result__title {
+  font-size: 2.3rem;
+}
+.result__score {
+  width: 17rem;
+  height: 17rem;
+  margin: 2.5rem auto;
+  border-radius: 50%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: grid;
+  place-content: center;
+}
+.result__points {
+  font-size: 6rem;
+  font-weight: bold;
+  color: white;
+}
+.result__subtitle {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
