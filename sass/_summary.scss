@@ -1,4 +1,14 @@
 .summary {
   width: 30rem;
-  border-radius: 0 2.5rem 2.5rem 0;
+  padding: 3rem;
+
+  &__title {
+    color: $color-Dark-gray-blue;
+  }
+
+  &__details {
+    height: 55%;
+    display: grid;
+    align-content: space-between;
+  }
 }

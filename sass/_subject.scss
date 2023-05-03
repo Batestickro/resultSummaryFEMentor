@@ -1,0 +1,33 @@
+.subject {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: .8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__stat {
+    display: flex;
+
+    span {
+      margin-left: 1rem;
+    }
+  }
+
+  &_reaction {
+    background-color: rgba(255, 87, 87, .1);
+  }
+
+  &_memory {
+    background-color: rgb(255, 176, 31, .1);
+  }
+
+  &_verbal {
+    background-color: rgb(0, 189, 145, .1);
+  }
+
+  &_visual {
+    background-color: rgb(17, 37, 212, .1);
+  }
+
+}
