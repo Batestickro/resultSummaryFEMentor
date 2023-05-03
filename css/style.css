@@ -81,6 +81,23 @@ body {
 }
 .subject__stat span {
   margin-left: 1rem;
+  font-weight: 600;
+}
+.subject__stat-reaction {
+  color: hsl(0, 100%, 67%);
+}
+.subject__stat-memory {
+  color: hsl(39, 100%, 56%);
+}
+.subject__stat-verbal {
+  color: hsl(166, 100%, 37%);
+}
+.subject__stat-visual {
+  color: hsl(234, 85%, 45%);
+}
+.subject__score {
+  font-weight: bold;
+  color: hsl(224, 30%, 27%);
 }
 .subject_reaction {
   background-color: rgba(255, 87, 87, 0.1);
@@ -94,6 +111,10 @@ body {
 .subject_visual {
   background-color: rgba(17, 37, 212, 0.1);
 }
+.subject p {
+  color: rgb(200, 199, 255);
+  font-weight: 800;
+}
 
 .summary {
   width: 30rem;
@@ -103,6 +124,7 @@ body {
   color: hsl(224, 30%, 27%);
 }
 .summary__details {
+  margin-top: 2.5rem;
   height: 55%;
   display: grid;
   align-content: space-between;

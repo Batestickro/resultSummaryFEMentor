@@ -11,7 +11,29 @@
 
     span {
       margin-left: 1rem;
+      font-weight: 600;
     }
+
+    &-reaction {
+      color: $color-Light-red;
+    }
+
+    &-memory {
+      color: $color-Orangey-yellow;
+    }
+
+    &-verbal {
+      color: $color-Green-teal;
+    }
+
+    &-visual {
+      color: $color-Cobalt-blue;
+    }
+  }
+
+  &__score {
+    font-weight: bold;
+    color: $color-Dark-gray-blue;
   }
 
   &_reaction {
@@ -28,6 +50,11 @@
 
   &_visual {
     background-color: rgb(17, 37, 212, .1);
+  }
+
+  p {
+    color: $color-Light-lavender;
+    font-weight: 800;
   }
 
 }
