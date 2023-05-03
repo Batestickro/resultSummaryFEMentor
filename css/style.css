@@ -69,7 +69,7 @@ body {
 }
 
 .subject {
-  padding: 1rem;
+  padding: 1rem 1.3rem;
   font-size: 1.4rem;
   border-radius: 0.8rem;
   display: flex;
@@ -84,16 +84,16 @@ body {
   font-weight: 600;
 }
 .subject__stat-reaction {
-  color: hsl(0, 100%, 67%);
+  color: rgb(255, 87, 87);
 }
 .subject__stat-memory {
-  color: hsl(39, 100%, 56%);
+  color: rgb(255, 176, 31);
 }
 .subject__stat-verbal {
-  color: hsl(166, 100%, 37%);
+  color: rgb(0, 189, 145);
 }
 .subject__stat-visual {
-  color: hsl(234, 85%, 45%);
+  color: rgb(17, 37, 212);
 }
 .subject__score {
   font-weight: bold;
@@ -128,6 +128,17 @@ body {
   height: 55%;
   display: grid;
   align-content: space-between;
+}
+.summary__btn {
+  display: inline-block;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
 }
 
 /*# sourceMappingURL=style.css.map */
