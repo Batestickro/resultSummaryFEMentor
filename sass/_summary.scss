@@ -2,6 +2,10 @@
   width: 30rem;
   padding: 3rem;
 
+  @media only screen and (max-width: 27em) {
+    width: 100%;
+  }
+
   &__title {
     color: $color-Dark-gray-blue;
   }
@@ -11,6 +15,10 @@
     height: 62%;
     display: grid;
     align-content: space-between;
+
+  @media only screen and (max-width: 37.5em) {
+    height: 22rem;
+  }
   }
 
   &__btn {
@@ -58,6 +66,11 @@
       &:active {
         transform: translateY(-.2rem);
         box-shadow: 0 .8rem 1rem rgba(48, 59, 90, .2);
+      }
+
+
+      @media only screen and (max-width: 37.5em) {
+        padding: 1.5rem 3rem;
       }
   }
 }

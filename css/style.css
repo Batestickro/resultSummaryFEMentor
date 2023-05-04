@@ -21,6 +21,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 26.2em) {
+  html {
+    font-size: 60%;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -29,12 +39,23 @@ body {
   display: grid;
   place-content: center;
 }
+@media only screen and (max-width: 37.5em) {
+  body {
+    min-height: 0;
+  }
+}
 
 .content {
   margin-bottom: 3rem;
   box-shadow: 1.5rem 2rem 4rem rgba(200, 199, 255, 0.4);
   border-radius: 2.5rem;
   display: flex;
+}
+@media only screen and (max-width: 37.5em) {
+  .content {
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 .result {
@@ -45,6 +66,17 @@ body {
   text-align: center;
   background-image: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
   border-radius: 2.5rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .result {
+    width: 34rem;
+    border-radius: 0 0 2.5rem 2.5rem;
+  }
+}
+@media only screen and (max-width: 27em) {
+  .result {
+    width: 100%;
+  }
 }
 .result__title {
   font-size: 2.3rem;
@@ -98,7 +130,7 @@ body {
 }
 .subject__score {
   font-weight: bold;
-  color: hsl(224, 30%, 27%);
+  color: rgb(48, 59, 90);
 }
 .subject_reaction {
   background-color: rgba(255, 87, 87, 0.1);
@@ -121,14 +153,24 @@ body {
   width: 30rem;
   padding: 3rem;
 }
+@media only screen and (max-width: 27em) {
+  .summary {
+    width: 100%;
+  }
+}
 .summary__title {
-  color: hsl(224, 30%, 27%);
+  color: rgb(48, 59, 90);
 }
 .summary__details {
   margin-top: 2.5rem;
   height: 62%;
   display: grid;
   align-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .summary__details {
+    height: 22rem;
+  }
 }
 .summary__btn {
   display: inline-block;
@@ -141,7 +183,7 @@ body {
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: hsl(224, 30%, 27%);
+  background-color: rgb(48, 59, 90);
   cursor: pointer;
   position: relative;
   animation: moveInBottom 0.5s ease-out 0.3s;
@@ -153,7 +195,7 @@ body {
   display: inline-block;
   height: 100%;
   width: 100%;
-  background-color: hsl(224, 30%, 27%);
+  background-color: rgb(48, 59, 90);
   border-radius: 10rem;
   position: absolute;
   top: 0;
@@ -172,6 +214,11 @@ body {
 .summary__btn:active {
   transform: translateY(-0.2rem);
   box-shadow: 0 0.8rem 1rem rgba(48, 59, 90, 0.2);
+}
+@media only screen and (max-width: 37.5em) {
+  .summary__btn {
+    padding: 1.5rem 3rem;
+  }
 }
 
 @keyframes moveInBottom {

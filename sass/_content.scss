@@ -3,4 +3,9 @@
   box-shadow: 1.5rem 2rem 4rem rgba( 200, 199, 255, .4);
   border-radius: 2.5rem;
   display: flex;
+  
+  @media only screen and (max-width: 37.5em) {
+    flex-flow: column;
+    align-items: center;
+  }
 }

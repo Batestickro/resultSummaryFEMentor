@@ -13,7 +13,7 @@ $color-Persian-blue: hsla(241, 72%, 46%, 0);
 
 $color-pale-blue: hsl(221, 100%, 96%);
 $color-Light-lavender: rgb(200, 199, 255);
-$color-Dark-gray-blue: hsl(224, 30%, 27%);
+$color-Dark-gray-blue: rgb(48, 59, 90);
 
 * {
   margin: 0;
@@ -29,6 +29,14 @@ $color-Dark-gray-blue: hsl(224, 30%, 27%);
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 70%;
+  }
+
+  @media only screen and (max-width: 26.2em) {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -37,4 +45,8 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
   display: grid;
   place-content: center;
+
+  @media only screen and (max-width: 37.5em) {
+    min-height: 0;
+  }
 }
