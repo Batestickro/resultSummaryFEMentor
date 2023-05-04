@@ -137,9 +137,52 @@ body {
   padding: 1rem 3rem;
   border: none;
   border-radius: 10rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
   color: white;
   background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+  position: relative;
+  animation: moveInBottom 0.5s ease-out 0.3s;
+  animation-fill-mode: backwards;
+  transition: all 0.3s;
+}
+.summary__btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.summary__btn:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 1.2rem 2rem rgba(48, 59, 90, 0.2);
+}
+.summary__btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.summary__btn:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.8rem 1rem rgba(48, 59, 90, 0.2);
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(7rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
