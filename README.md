@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Batestickro/resultSummaryFEMentor)
-- Live Site URL: [Add live site URL here](https://batestickro.github.io/resultSummaryFEMentor/)
+- Solution URL: [GitHub Repo](https://github.com/Batestickro/resultSummaryFEMentor)
+- Live Site URL: [live site](https://batestickro.github.io/resultSummaryFEMentor/)
 
 ## My process
 
